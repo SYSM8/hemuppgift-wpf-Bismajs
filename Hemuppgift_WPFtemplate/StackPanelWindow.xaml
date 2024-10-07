@@ -1,0 +1,31 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.StackPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="StackPanelWindow" Height="450" Width="800">
+
+    <Grid Margin="0,20,0,0">
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+            <RadioButton x:Name="horizontalBtn" Content="Horizontal" Margin="0,-10,0,0" Click="ToHorizontal" IsChecked="False"/>
+            <RadioButton x:Name="verticalBtn" Content="Vertical"  Margin="10,-10,0,0" Click="ToVertical"  IsChecked="False"/>
+        </StackPanel>
+
+        <ScrollViewer>
+            <StackPanel x:Name = "Stack" HorizontalAlignment="Left" Orientation="Horizontal" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="0,10">
+                <Rectangle x:Name="rec1" Fill="red" Height="100" Width="100" Margin="5" />
+                <Rectangle x:Name="rec2" Fill="orange" Height="90" Width="90" Margin="5"/>
+                <Rectangle x:Name="rec3" Fill="yellow" Height="80" Width="80" Margin="5"/>
+                <Rectangle x:Name="rec4" Fill="LightGreen" Height="70" Width="70" Margin="5"/>
+                <Rectangle x:Name="rec5" Fill="green" Height="60" Width="60" Margin="5"/>
+                <Rectangle x:Name="rec6" Fill="LightBlue" Height="50" Width="50" Margin="5"/>
+                <Rectangle x:Name="rec7" Fill="blue" Height="40" Width="40" Margin="5"/>
+                <Rectangle x:Name="rec8" Fill="black" Height="30" Width="30" Margin="5"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+</Window>

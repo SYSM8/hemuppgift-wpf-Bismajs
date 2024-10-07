@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace Hemuppgift_WPFtemplate
 {
@@ -11,6 +12,31 @@ namespace Hemuppgift_WPFtemplate
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void NavigateToGrid(object sender, RoutedEventArgs e)
+        {
+            GridWindow gridWindow = new GridWindow();
+            gridWindow.Show();
+        }
+
+        private void NavigateToStack(object sender, RoutedEventArgs e)
+        {
+            StackPanelWindow stackPanelWindow = new StackPanelWindow();
+            stackPanelWindow.Show();
+
+        }
+
+        private void NavigateToWrap(object sender, RoutedEventArgs e)
+        {
+            WrapWindow wrapWindow = new WrapWindow();
+            wrapWindow.Show();
+        }
+
+        private void NavigateToDock(object sender, RoutedEventArgs e)
+        {
+            DockWindow dockWindow = new DockWindow();
+            dockWindow.Show();
         }
     }
 }

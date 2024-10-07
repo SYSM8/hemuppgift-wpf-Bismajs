@@ -18,8 +18,8 @@
         </Grid.ColumnDefinitions>
         <Frame x:Name="MainFrame"/>
         <Button x:Name="gridBtn" Content="Grid" FontSize="26" Click="NavigateToGrid"/>
-        <Button x:Name="stkBtn" Content="StackPanel" FontSize="26" Grid.Column="1" Background="LightYellow"/>
-        <Button x:Name="wrpBtn" Content="WrapPanel" FontSize="26" Grid.Row="1"/>
-        <Button x:Name="dckBtn" Content="DockPanel" FontSize="26" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="stkBtn" Content="StackPanel" FontSize="26" Grid.Column="1" Click="NavigateToStack"/>
+        <Button x:Name="wrpBtn" Content="WrapPanel" FontSize="26" Grid.Row="1" Click="NavigateToWrap"/>
+        <Button x:Name="dckBtn" Content="DockPanel" FontSize="26" Grid.Row="1" Grid.Column="1" Click="NavigateToDock"/>
     </Grid>
 </Window>
